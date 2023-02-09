@@ -430,8 +430,7 @@ class ChatState extends State<Chat> {
                                     BuildContext context,
                                     BoxConstraints constraints,
                                   ) =>
-                                      Padding(padding: EdgeInsets.only(bottom: 148),
-                                        child:ChatList(
+                                      ChatList(
                                     bottomWidget: widget.listBottomWidget,
                                     bubbleRtlAlignment:
                                         widget.bubbleRtlAlignment!,
@@ -454,7 +453,8 @@ class ChatState extends State<Chat> {
                                         widget.typingIndicatorOptions,
                                     useTopSafeAreaInset:
                                         widget.useTopSafeAreaInset ?? isMobile,
-                                  )),
+                                  ),
+                                  SizedBox(height: 48),
                                 ),
                               ),
                       ),
