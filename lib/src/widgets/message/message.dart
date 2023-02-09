@@ -321,9 +321,24 @@ class Message extends StatelessWidget {
                     borderRadius: borderRadius,
                     color: !currentUserIsAuthor ||
                             message.type == types.MessageType.image
-                        ? InheritedChatTheme.of(context).theme.secondaryColor
+                        ? null
                         : InheritedChatTheme.of(context).theme.primaryColor,
+                        gradient: !currentUserIsAuthor ||
+                            message.type == types.MessageType.image
+                        ?LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [Color.fromRGBO(255, 124, 66, 1), Color.fromRGBO(250, 80, 148, 1)]) : null
                   ),
+      //               color: !currentUserIsAuthor ||
+      //                       message.type == types.MessageType.image
+      //                   ? InheritedChatTheme.of(context).theme.secondaryColor
+      //                   : InheritedChatTheme.of(context).theme.primaryColor,
+      //                   gradient: LinearGradient(
+      // begin: Alignment.topLeft,
+      // end: Alignment.bottomRight,
+      // colors: [Color.fromRGBO(255, 124, 66, 1), Color.fromRGBO(250, 80, 148, 1)])
+      //             ),
                   child: ClipRRect(
                     borderRadius: borderRadius,
                     child: _messageBuilder(),
