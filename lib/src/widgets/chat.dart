@@ -430,7 +430,7 @@ class ChatState extends State<Chat> {
                                     BuildContext context,
                                     BoxConstraints constraints,
                                   ) =>
-                                      Padding(padding: EdgeInsets.only(bottom: 48),
+                                      Padding(padding: EdgeInsets.only(bottom: 148),
                                         child:ChatList(
                                     bottomWidget: widget.listBottomWidget,
                                     bubbleRtlAlignment:
