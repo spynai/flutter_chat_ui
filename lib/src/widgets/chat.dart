@@ -454,7 +454,7 @@ class ChatState extends State<Chat> {
                                     useTopSafeAreaInset:
                                         widget.useTopSafeAreaInset ?? isMobile,
                                   ),
-                                  SizedBox(height: 48),
+                                 
                                 ),
                               ),
                       ),
