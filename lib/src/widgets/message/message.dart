@@ -273,20 +273,20 @@ class Message extends StatelessWidget {
               ],
             ),
           ),
-          if (currentUserIsAuthor)
-            Padding(
-              padding: InheritedChatTheme.of(context).theme.statusIconPadding,
-              child: showStatus
-                  ? GestureDetector(
-                      onLongPress: () =>
-                          onMessageStatusLongPress?.call(context, message),
-                      onTap: () => onMessageStatusTap?.call(context, message),
-                      child: customStatusBuilder != null
-                          ? customStatusBuilder!(message, context: context)
-                          : MessageStatus(status: message.status),
-                    )
-                  : null,
-            ),
+          // if (currentUserIsAuthor)
+          //   Padding(
+          //     padding: InheritedChatTheme.of(context).theme.statusIconPadding,
+          //     child: showStatus
+          //         ? GestureDetector(
+          //             onLongPress: () =>
+          //                 onMessageStatusLongPress?.call(context, message),
+          //             onTap: () => onMessageStatusTap?.call(context, message),
+          //             child: customStatusBuilder != null
+          //                 ? customStatusBuilder!(message, context: context)
+          //                 : MessageStatus(status: message.status),
+          //           )
+          //         : null,
+          //   ),
         ],
       ),
     );
