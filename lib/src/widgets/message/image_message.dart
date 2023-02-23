@@ -79,6 +79,7 @@ class _ImageMessageState extends State<ImageMessage> {
             : InheritedChatTheme.of(context).theme.secondaryColor,
         child: Row(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               height: 64,

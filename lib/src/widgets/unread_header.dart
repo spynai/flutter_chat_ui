@@ -16,7 +16,7 @@ class UnreadHeader extends StatelessWidget {
         alignment: Alignment.center,
         color: InheritedChatTheme.of(context).theme.unreadHeaderTheme.color,
         margin: EdgeInsets.only(bottom: 24, top: marginTop ?? 0),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8),
         child: Text(
           InheritedL10n.of(context).l10n.unreadMessagesLabel,
           style:
